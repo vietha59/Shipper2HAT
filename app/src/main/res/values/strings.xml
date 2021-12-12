@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Shipper2HAT</string>
+    <string name = "taikhoan">Tài Khoản</string>
+    <string name = "matkhau">Paasword</string>
+    <string name="dangnhap">Đăng Nhập</string>
+    <string name="fogetpass">Quên Mật Khẩu</string>
+    <string name="hovaten">Họ và Tên</string>
+    <string name="datebirth">Ngày Tháng Năm Sinh</string>
+    <string name="phone">Số Điện Thoại</string>
+    <string name="quenmatkhau">Quên mật khẩu</string>
+    <string name="email">Email</string>
+    <string name="gui">Gửi</string>
+    <string name="chhuoikhoiphucmatkhau">Vui lòng nhập email , chúng tôi sẽ gửi mật khẩu mới vào hộp thư của bạn</string>
+
+</resources>
