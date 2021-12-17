@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Shipper2HAT</string>
-    <string name = "taikhoan">Tài Khoản</string>
-    <string name = "matkhau">Paasword</string>
+    <string name="taikhoan">Tài Khoản</string>
+    <string name="matkhau">Paasword</string>
     <string name="dangnhap">Đăng Nhập</string>
     <string name="fogetpass">Quên Mật Khẩu</string>
     <string name="hovaten">Họ và Tên</string>

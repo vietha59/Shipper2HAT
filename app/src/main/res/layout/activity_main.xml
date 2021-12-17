@@ -1,11 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:scrollbars = "vertical"
-    tools:context=".MainActivity">
-    
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars = "vertical"
+        android:layout_margin="10dp"
+        android:paddingBottom="300dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/txtdiachi"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ của bạn >>"
+                android:layout_gravity="left"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/anhdaidien"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:src="@drawable/avatar"
+                app:civ_border_color="#fff"
+                app:civ_border_width="5dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Maps"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".GoogleMaps" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtslogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" Lịch sử giao hàng"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppinsbold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvmonan"
+            android:layout_width="match_parent"
+            android:layout_height="201dp" />
+    </LinearLayout>
 </ScrollView>

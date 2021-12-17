@@ -21,7 +21,7 @@ public class DatabaseShipper {
     String key;
     public DatabaseShipper(Context context) {
         this.context = context;
-        this.mRef = FirebaseDatabase.getInstance().getReference("Users");
+        this.mRef = FirebaseDatabase.getInstance().getReference("Shipper");
     }
     public void getAll(final ShipperCallBack callback) {
         final ArrayList<Shipper> dataloai = new ArrayList<>();

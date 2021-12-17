@@ -31,7 +31,7 @@ import java.util.ArrayList;
 public class DangNhapActivity extends AppCompatActivity implements  View.OnClickListener,  FirebaseAuth.AuthStateListener {
 
     Button mloginBtn;
-    TextView btnquenmatkhau;
+    TextView btndangky, btnquenmatkhau;
     EditText mEmail,mPassword;
     ProgressBar progressBar;
     DatabaseShipper databaseShipper;
@@ -50,6 +50,7 @@ public class DangNhapActivity extends AppCompatActivity implements  View.OnClick
         mPassword = findViewById(R.id.password);
         mloginBtn = findViewById(R.id.loginBtn);
         btnquenmatkhau = findViewById(R.id.btnquenmatkhau);
+        btndangky = findViewById(R.id.btndangky);
         progressBar = findViewById(R.id.progressBar);
         /*-------------------- Kết thúc gán giá trị --------------------*/
 
@@ -57,6 +58,7 @@ public class DangNhapActivity extends AppCompatActivity implements  View.OnClick
         firebaseAuth = FirebaseAuth.getInstance();
         mloginBtn.setOnClickListener(this);
         btnquenmatkhau.setOnClickListener(this);
+        btndangky.setOnClickListener(this);
     }
 
     /*-------------------- Đăng nhập bằng email, password --------------------*/
@@ -131,6 +133,11 @@ public class DangNhapActivity extends AppCompatActivity implements  View.OnClick
             case R.id.btnquenmatkhau:
                 Intent iKhoiPhuc = new Intent(DangNhapActivity.this, QuenMatKhau.class);
                 startActivity(iKhoiPhuc);
+            case R.id.btndangky:
+                Intent iDangKy = new Intent(DangNhapActivity.this, DangKyActivity.class);
+                startActivity(iDangKy);
+                break;
+
         }
     }
 
@@ -142,4 +149,5 @@ public class DangNhapActivity extends AppCompatActivity implements  View.OnClick
                 startActivity(intent);
             };
     }
+
 }
